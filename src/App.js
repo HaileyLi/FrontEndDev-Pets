@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Loading from './Loading.jsx'
+import Display from './Display.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,8 +15,33 @@ class App extends React.Component {
   componentDidMount() {
     this.getData()
       .then(data => {
+        let maleCat = []
+        let femaleCat = []
+
+        data.filter((item, i) => {
+          if (item.gender === "Male") {
+            if (item.pets !== null) {
+              item.pets.filter((pet, ind) => {
+                if (pet.type === "Cat") {
+                  maleCat.push(pet.name)
+                }
+              })
+            }
+
+          } else {
+            if (item.pets !== null) {
+              item.pets.filter((pet, ind) => {
+                if (pet.type === "Cat") {
+                  femaleCat.push(pet.name)
+                }
+              })
+            }
+          }
+
+        })
         this.setState({
-          data: data,
+          maleCat: maleCat,
+          femaleCat: femaleCat,
           isLoading: false
         })
       })
@@ -32,11 +58,12 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.state.femaleCat)
     return (
       <React.Fragment>
         {this.state.isLoading ?
           <Loading /> :
-          <div>Data</div>
+          <Display maleCat={this.state.maleCat} femaleCat={this.state.femaleCat} />
         }
       </React.Fragment>
 
