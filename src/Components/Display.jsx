@@ -15,8 +15,8 @@ class Display extends React.Component {
                 {this.props.maleCat.length === 0 ?
                     <span>No Cats Recorded</span> :
                     <ul>
-                        {this.props.maleCat.sort().map(item =>
-                            <li>{item}</li>
+                        {this.props.maleCat.sort().map((item, i) =>
+                            <li key={"mkey" + i}>{item}</li>
                         )}
                     </ul>}
                 <h1>Female:</h1>
@@ -24,8 +24,8 @@ class Display extends React.Component {
                 {this.props.femaleCat.length === 0 ?
                     <span>No Cats Recorded</span> :
                     <ul>
-                        {this.props.femaleCat.sort().map(item =>
-                            <li>{item}</li>
+                        {this.props.femaleCat.sort().map((item, i) =>
+                            <li key={"fkey" + i}>{item}</li>
                         )}
                     </ul>}
 

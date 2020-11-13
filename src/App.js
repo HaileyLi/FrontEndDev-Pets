@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Loading from './Loading.jsx'
-import Display from './Display.jsx';
+import Loading from './Components/Loading.jsx'
+import Display from './Components/Display.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -58,7 +58,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.femaleCat)
     return (
       <React.Fragment>
         {this.state.isLoading ?
