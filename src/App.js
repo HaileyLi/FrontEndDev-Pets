@@ -18,10 +18,10 @@ class App extends React.Component {
         let maleCat = []
         let femaleCat = []
 
-        data.filter((item, i) => {
+        data.forEach((item, i) => {
           if (item.gender === "Male") {
             if (item.pets !== null) {
-              item.pets.filter((pet, ind) => {
+              item.pets.forEach((pet, ind) => {
                 if (pet.type === "Cat") {
                   maleCat.push(pet.name)
                 }
@@ -30,15 +30,15 @@ class App extends React.Component {
 
           } else {
             if (item.pets !== null) {
-              item.pets.filter((pet, ind) => {
+              item.pets.forEach((pet, ind) => {
                 if (pet.type === "Cat") {
                   femaleCat.push(pet.name)
                 }
               })
             }
           }
-
-        })
+        }
+        )
         this.setState({
           maleCat: maleCat,
           femaleCat: femaleCat,
