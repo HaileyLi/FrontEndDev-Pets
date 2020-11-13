@@ -48,7 +48,7 @@ class App extends React.Component {
   }
 
   getData = () => {
-    return axios.get("http://5c92dbfae7b1a00014078e61.mockapi.io/owners")
+    return axios.get("https://5c92dbfae7b1a00014078e61.mockapi.io/owners")
       .then((res) => {
         return res.data
       })
