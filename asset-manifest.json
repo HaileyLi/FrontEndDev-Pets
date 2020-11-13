@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FrontEndDev-Pets/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/FrontEndDev-Pets/static/js/main.499affb0.chunk.js",
+    "main.js.map": "/FrontEndDev-Pets/static/js/main.499affb0.chunk.js.map",
+    "runtime-main.js": "/FrontEndDev-Pets/static/js/runtime-main.2d48f9c1.js",
+    "runtime-main.js.map": "/FrontEndDev-Pets/static/js/runtime-main.2d48f9c1.js.map",
+    "static/js/2.fcadad9d.chunk.js": "/FrontEndDev-Pets/static/js/2.fcadad9d.chunk.js",
+    "static/js/2.fcadad9d.chunk.js.map": "/FrontEndDev-Pets/static/js/2.fcadad9d.chunk.js.map",
+    "static/js/3.451b0b78.chunk.js": "/FrontEndDev-Pets/static/js/3.451b0b78.chunk.js",
+    "static/js/3.451b0b78.chunk.js.map": "/FrontEndDev-Pets/static/js/3.451b0b78.chunk.js.map",
+    "index.html": "/FrontEndDev-Pets/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/FrontEndDev-Pets/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.fcadad9d.chunk.js.LICENSE.txt": "/FrontEndDev-Pets/static/js/2.fcadad9d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d48f9c1.js",
+    "static/js/2.fcadad9d.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.499affb0.chunk.js"
+  ]
+}
